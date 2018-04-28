@@ -1,0 +1,56 @@
+\documentclass[a5paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{alltt}
+\usepackage{varwidth}
+
+\usepackage{fontspec}
+\usepackage{DejaVuSansMono}
+\usepackage{DejaVuSans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+\definecolor{sunday}{rgb}{1,0,0}
+\definecolor{holiday}{rgb}{0,0,1}
+
+\newcommand{\weekdays}[1]{\textbf{#1}}
+\newcommand{\sunday}[1]{\textcolor{sunday}{\textbf{#1}}}
+\newcommand{\holiday}[1]{\textcolor{holiday}{\textbf{#1}}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+%! for month in months:
+\begin{textblock*}{\paperwidth} (0cm, 13mm)
+    \centering
+    \includegraphics[width=0.86\textwidth]{\VAR{month.imagefile}}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 120mm)
+    \begin{center}
+        \Huge{}\VAR{month.name}
+    \end{center}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 135mm)
+    \begin{center}
+        \begin{varwidth}{\linewidth}
+            \begin{alltt}
+\LARGE
+\VAR{month.caltext}
+            \end{alltt}
+        \end{varwidth}
+    \end{center}
+\end{textblock*}
+
+\hfill
+\newpage
+
+%!endfor
+\end{document}
+
+% vim: set ft=tex ts=4 sw=4 tw=0 et :
