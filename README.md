@@ -6,6 +6,8 @@ Example
 
 ![Example calendar sheet: May 2018](calendar_2018_05.png)
 
+(The language of the month and day names can be changed in the script.)
+
 Usage
 -----
 
