@@ -1,6 +1,11 @@
 Python-to-TeX photo calendar (ptpcal.py)
 ========================================
 
+Example
+-------
+
+![Example calendar sheet: May 2018](calendar_2018_05.png)
+
 Usage
 -----
 
