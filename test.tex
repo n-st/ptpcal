@@ -1,0 +1,87 @@
+\documentclass[a5paper]{article}
+\usepackage[margin=0cm]{geometry}
+\usepackage{graphicx}
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{alltt}
+\usepackage{varwidth}
+
+\usepackage{fontspec}
+\usepackage{DejaVuSansMono}
+\usepackage{DejaVuSans}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+\definecolor{sunday}{rgb}{1,0,0}
+\definecolor{holiday}{rgb}{0,0,1}
+
+\newcommand{\weekdays}[1]{\textbf{#1}}
+\newcommand{\sunday}[1]{\textcolor{sunday}{\textbf{#1}}}
+\newcommand{\holiday}[1]{\textcolor{holiday}{\textbf{#1}}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{textblock*}{\paperwidth} (0cm, 13mm)
+    \centering
+    \includegraphics[width=0.86\textwidth]{test.jpg}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 120mm)
+    \begin{center}
+        \Huge{}September
+    \end{center}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 135mm)
+    \begin{center}
+        \begin{varwidth}{\linewidth}
+            \begin{alltt}
+\LARGE
+\weekdays{Mo Di Mi Do Fr Sa So}
+    \holiday{1}  2  3  4  5  \sunday{6}
+ 7  8  9 \holiday{10} 11 12 \sunday{13}
+14 15 16 17 18 19 \sunday{20}
+\holiday{21} 22 23 24 25 26 \sunday{27}
+28 29 30 \holiday{31}         
+            \end{alltt}
+        \end{varwidth}
+    \end{center}
+\end{textblock*}
+
+\hfill
+\newpage
+
+\begin{textblock*}{\paperwidth} (0cm, 13mm)
+    \centering
+    \includegraphics[width=0.86\textwidth]{test.jpg}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 120mm)
+    \begin{center}
+        \Huge{}September
+    \end{center}
+\end{textblock*}
+
+\begin{textblock*}{\paperwidth} (0cm, 135mm)
+    \begin{center}
+        \begin{varwidth}{\linewidth}
+            \begin{alltt}
+\LARGE
+\weekdays{Mo Di Mi Do Fr Sa So}
+    \holiday{1}  2  3  4  5  \sunday{6}
+ 7  8  9 \holiday{10} 11 12 \sunday{13}
+14 15 16 17 18 19 \sunday{20}
+\holiday{21} 22 23 24 25 26 \sunday{27}
+28 29 30 \holiday{31}         
+            \end{alltt}
+        \end{varwidth}
+    \end{center}
+\end{textblock*}
+
+\hfill
+\newpage
+
+\end{document}
